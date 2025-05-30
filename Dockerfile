@@ -5,8 +5,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PIP_NO_CACHE_DIR=on \
     SHELL=/bin/bash
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-
 # Upgrade apt packages and install required dependencies
 RUN apt update && \
     apt upgrade -y && \
