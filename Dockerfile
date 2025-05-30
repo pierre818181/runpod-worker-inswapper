@@ -2,8 +2,7 @@ FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=on \
-    SHELL=/bin/bash
+    PIP_NO_CACHE_DIR=on
 
 # Upgrade apt packages and install required dependencies
 RUN apt update && \
