@@ -29,10 +29,7 @@ RUN apt update && \
       ffmpeg \
       unzip \
       libgoogle-perftools-dev \
-      procps && \
-    apt-get autoremove -y && \
-    rm -rf /var/lib/apt/lists/* && \
-    apt-get clean -y
+      procps
 
 # Set working directory
 WORKDIR /workspace
